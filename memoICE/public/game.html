@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    </link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Italiana&display=swap" rel="stylesheet">
+    <title> Game Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="game-instruction">
+            <h2 id="game-title">MemoICE</h2>
+            <p> <b>COLLABORATE </b> to memorize as much words as you can</p>
+        </div>
+
+        <div class="game-memory-timer">
+            <p>
+                <h2 id="game-timer">00:00</h2>
+            </p>
+        </div>
+
+        <div id="game-words">
+            <h2 class="button-64">Words Left: <span id="words-left">0</span></h2>
+        </div>
+
+        <!-- View game messages here here -->
+        <div class="sub-container game-feed">
+            <div class="game-header" id="game-header-msg">Game Box</div>
+            <div class="game-box" id="game-box-msgs"></div>
+        </div>
+
+        <!-- Enter game messages here -->
+        <form class="sub-container game-input" id="game-form">
+            <p id="user-name"></p>
+            <input type="text" class="game-input-msg" id="word-input" placeholder="Enter the words you remember" required/>
+            <button class="spanClass" id="send-button"></button>
+        </form>
+
+        <button id="start-button">Start Game</button>
+        <h2>Total Score: <span id="game-score">0</span></h2>
+    </div>
+    <div>
+        <button id="go-home"> Go Back</button>
+    </div>
+
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

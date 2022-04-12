@@ -1,0 +1,172 @@
+body {
+    /* background: #111; */
+    font-family: 'Electrolize', sans-serif;
+    text-align: center;
+    margin: 0;
+    background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000);
+    color: whitesmoke;
+}
+
+#game-title {
+    font-family: 'Electrolize', sans-serif;
+    color: palevioletred;
+    font-size: 3em;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.console-container {
+    background: #111;
+    font-family: Khula;
+    font-size: 4em;
+    text-align: center;
+    height: 200px;
+    width: 600px;
+    display: block;
+    position: absolute;
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.console-underscore {
+    display: inline-block;
+    position: relative;
+    top: -0.14em;
+    left: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-container {
+    display: flex;
+    width: 50%;
+    max-width: 1200px;
+}
+
+.game-input {
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-between;
+}
+
+.game-feed {
+    flex-direction: column;
+    align-items: left;
+}
+
+input {
+    display: inline;
+    padding: 5px;
+    margin: 10px 10px 0 0;
+    height: 20px;
+}
+
+.game-input-name {
+    width: 20%;
+}
+
+.game-input-msg {
+    width: 65%;
+}
+
+button {
+    height: 28px;
+    margin-top: 10px;
+}
+
+.game-header {
+    margin-top: 10px;
+    font-size: 23px;
+    text-align: center;
+}
+
+.game-box {
+    border: 2px solid black;
+    height: 300px;
+    padding-left: 5px;
+    overflow: auto;
+}
+
+.game-instruction {
+    text-align: center;
+}
+
+#game-timer {
+    border: 2px solid red;
+    height: 30px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+#user-name {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.spanClass {
+    color: salmon;
+}
+
+#start-button {
+    background: green;
+    cursor: pointer;
+}
+
+#go-home {
+    background: rgb(89, 34, 52);
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+#go-back {
+    background: rgb(89, 34, 52);
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+p {
+    overflow-wrap: break-word;
+}
+
+.tag {
+    background: #000;
+    color: #fff;
+    margin: 0 2px;
+    padding: 0 3px;
+    border: solid 2px green;
+    line-height: 1.2em;
+    height: 1.2em
+}
+
+@media (max-width: 800px) {
+    .sub-container {
+        width: 75%;
+    }
+}
+
+.button-64 {
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    padding: 5px;
+}
+
+@media (min-width: 768px) {
+    .button-64 {
+        font-size: 24px;
+        min-width: 196px;
+    }
+}
